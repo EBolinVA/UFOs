@@ -24,3 +24,26 @@ data.forEach((dataRow) => {
   );
 });
 }
+
+// Build a function to handle user clicks
+// create variables to hold date data
+function handleClick() {
+  let date = d3.select("#datetime").property("value");
+
+  let filteredData = tableData;
+
+  // if-statement syntax
+  if (date) {
+    filteredData = filteredData.filter(row => row.datetime === date);
+  };
+
+  //REuild the table using the filtered data
+  // Note: If no date was entered, then dilteredData will
+  // just be the original tableData.
+  buildTable(filteredData);
+}
+
+d3.selectAll("#filter-btn").on("click", handleClick);
+
+// Build the table when the page loads
+buildTable(tableData);
