@@ -24,14 +24,23 @@ function buildTable(data) {
 }
 
 // 1. Create a variable to keep track of all the filters as an object.
-
+var filters = {};
 
 // 3. Use this function to update the filters. 
 function updateFilters() {
 
     // 4a. Save the element that was changed as a variable.
-
+    var inputElement = d3.select("datetime");
+    var inputElement2 = d3.select("cityinput");
+    var inputElement3 = d3.select("stateinput");
+    var inputElement4 = d3.select("countryinput");
+    var inputElement5 = d3.select("shapeinput");
     // 4b. Save the value that was changed as a variable.
+    var inputValue = inputElement.property("value");
+    var inputValue2 = inputElement2.property("value");
+    var inputValue3 = inputElement3.property("value");
+    var inputValue4 = inputElement4.property("value");
+    var inputValue5 = inputElement5.property("value");
 
     // 4c. Save the id of the filter that was changed as a variable.
 
