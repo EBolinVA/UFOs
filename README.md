@@ -20,4 +20,15 @@ Then, the user will click the "Filter Table" button and the table will return el
 ![image of table being filtered by state and shape](https://github.com/EBolinVA/UFOs/blob/main/static/images/filter_table.png)
 
 ## Summary: 
-In a summary statement, describe one drawback of this new design and two recommendations for further development.
+This dynamic JavaScript table which filters UFO sightings based on user criteria is a good start to providing useful information to UFO enthusiasts across the country. 
+
+### One Drawback and Two Recommended Improvements
++ Currently, the table filter input fields only accept exact values. No results will be returned in the following examples:
+    - Input a date outside the range of our data
+    - Input "El Cajon" instead of "el cajon" in the "Enter a City" field
+    - Input "CA" instead of "ca" in the "Enter a State" field
+    - Input "US" instead of "us" in the "Enter a Country" field
+    - Input "Circle" or "CIRCLE" in the "Enter a Shape" field
+
++ The first recommended improvement is to make the user input case insensitive by using the .toLowerCase() function
++ As an alternative, the second improvement would be to add a drop-down box for user input so that they are choosing only  the available values in the table. For example, a drop-down in the "Enter a Shape" field would display only choices found in the table and would prevent a user from entering a shape not found in the original dataset.
