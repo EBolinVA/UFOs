@@ -5,7 +5,7 @@ This webpage is a result of building a table using data stored in a JavaScript a
 UFO sighting data is collected across the country. This data is currently stored in a JavaScript array, which looks like a very long Python dictionary, except for being encased in square brackets. Each event of a UFO sighting has several key:value pairs containing information about the sighting date, location, shape and any description. In order to study this data, it will be converted into a table that is filterable by customers wanting to search the UFO sighting information. This dynamic and user-friendly table is accessible by a custom webpage built for this project.
 
 We begin with a data file holding a JavaScript array. Each record has seven key:value pairs.
-![image of JavaScript array]()
+![image of JavaScript array](https://github.com/EBolinVA/UFOs/blob/main/static/images/data_file.png)
 
 ## Results: 
 
